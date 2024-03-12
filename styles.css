@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-pink: hsl(275, 100%, 97%);
+  --color-gray-purple: hsl(292, 16%, 49%);
+  --color-dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  font-family: "Work Sans";
+  height: 100vh;
+}
+
+.container {
+  margin: auto;
+  width: 75%;
+  height: 90vh;
+  background: url(./assets/images/background-pattern-desktop.svg) top no-repeat,
+    var(--color-pink) bottom no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: var(--color-white);
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.card .faqs {
+  display: flex;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.faqs h1 {
+  margin-left: 10px;
+}
+
+.qa {
+  transition: all 0.2s ease;
+}
+
+.qa {
+  border-bottom: 0.5px solid var(--color-pink);
+}
+.qa:nth-child(5) {
+  border-bottom: none;
+}
+.qa > h3,
+span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qa span img {
+  cursor: pointer;
+}
+
+.plus {
+  transition: all 0.2s ease;
+}
+
+.minus {
+  transition: all 0.2s ease;
+}
+
+.answer-hidden {
+  display: none;
+}
+
+.answer-display {
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
